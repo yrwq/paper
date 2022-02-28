@@ -80,7 +80,7 @@ function paper.load_syntax()
     VertSplit = {fg=paper.black,bg=paper.bg};
     Folded = {fg=paper.grey,bg=paper.bg_highlight};
     EndOfBuffer = {fg=paper.bg,bg=paper.none};
-    IncSearch = {fg=paper.bg1,bg=paper.orange,style=zephyr.none};
+    IncSearch = {fg=paper.bg1,bg=paper.orange,style=paper.none};
     Search = {fg=paper.bg,bg=paper.orange};
     ColorColumn = {fg=paper.none,bg=paper.bg_highlight};
     Conceal = {fg=paper.grey,bg=paper.none};
@@ -117,8 +117,8 @@ function paper.load_syntax()
     Tabline = {fg=paper.base6,bg=paper.base2};
     TabLineFill = {style=paper.none};
     TabLineSel = {fg=paper.fg,bg=paper.blue};
-    StatusLine = {fg=paper.base8,bg=paper.base2,style=zephyr.none};
-    StatusLineNC = {fg=paper.grey,bg=paper.base2,style=zephyr.none};
+    StatusLine = {fg=paper.base8,bg=paper.base2,style=paper.none};
+    StatusLineNC = {fg=paper.grey,bg=paper.base2,style=paper.none};
     SpellBad = {fg=paper.red,bg=paper.none,style='undercurl'};
     SpellCap = {fg=paper.blue,bg=paper.none,style='undercurl'};
     SpellLocal = {fg=paper.cyan,bg=paper.none,style='undercurl'};
@@ -157,7 +157,7 @@ function paper.load_syntax()
     Character = {fg=paper.green};
     Constant = {fg=paper.cyan};
     Macro = {fg=paper.cyan};
-    Identifier = {fg=paper.blue};
+    Identifier = {fg=paper.orange};
 
     Comment = {fg=paper.base6};
     SpecialComment = {fg=paper.grey};
@@ -181,7 +181,7 @@ function paper.load_plugin_syntax()
     TSKeywordFunction = {fg=paper.red};
     TSProperty = {fg=paper.yellow};
     TSType = {fg=paper.teal};
-    TSVariable = {fg=paper.blue};
+    TSVariable = {fg=paper.orange};
     TSPunctBracket = {fg=paper.bracket};
 
     vimCommentTitle = {fg=paper.grey,style='bold'};
