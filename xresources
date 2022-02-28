@@ -1,0 +1,41 @@
+Xft.autohint: 0
+Xft.antialias: 1
+Xft.hinting: true
+Xft.hintstyle: hintslight
+Xft.dpi: 96
+
+*.foreground:   #c8bAA4
+*.background:   #252221
+*.cursorColor:  #cdc0ad
+
+/* Black */
+*.color0:       #302c2b
+*.color8:       #413c3a
+
+/* Red */ 
+*.color1:       #c65f5f
+*.color9:       #c65f5f
+
+/* Green */
+*.color2:       #859e82
+*.color10:      #859e82
+
+/* Yellow */
+*.color3:       #d9b27c
+*.color11:      #d9b27c
+
+/* Orange */
+*.color4:       #d08b65
+*.color12:      #d08b65
+
+/* Purple */
+*.color5:       #998396
+*.color13:      #998396
+
+/* Beige */
+*.color6:       #ab9382
+*.color14:      #ab9382
+
+/* White */
+*.color7:       #beae94
+*.color15:      #d1c6b4
