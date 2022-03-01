@@ -130,8 +130,8 @@ function paper.load_syntax()
     debugBreakpoint = {fg=paper.bg,bg=paper.red};
 
     Boolean = {fg=paper.orange};
-    Number = {fg=paper.brown};
-    Float = {fg=paper.brown};
+    Number = {fg=paper.violet};
+    Float = {fg=paper.violet};
     PreProc = {fg=paper.violet};
     PreCondit = {fg=paper.violet};
     Include = {fg=paper.violet};
