@@ -1,1 +1,1 @@
-lua require("paper")
+require("paper")
