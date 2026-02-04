@@ -159,7 +159,7 @@ function paper.load_syntax()
     Macro = {fg=paper.cyan};
     Identifier = {fg=paper.orange};
 
-    Comment = {fg=paper.fg, bg=paper.bg_highlight};
+    Comment = {fg=paper.bg_highlight};
     SpecialComment = {fg=paper.grey};
     Todo = {fg=paper.violet};
     Delimiter = {fg=paper.fg};
@@ -170,6 +170,8 @@ function paper.load_syntax()
     DashboardHeader = {fg=paper.orange};
     DashboardCenter = {fg=paper.cyan};
     DashboardFooter = {fg=paper.yellow,style='bold'};
+
+
   }
   return syntax
 end
@@ -265,6 +267,28 @@ function paper.load_plugin_syntax()
     NvimTreeFolderName = {fg=paper.blue};
     NvimTreeRootFolder = {fg=paper.red,style='bold'};
     NvimTreeSpecialFile = {fg=paper.fg,bg=paper.none,stryle='NONE'};
+
+    TSRainbowRed = { fg = paper.red },
+    TSRainbowOrange = { fg = paper.orange },
+    TSRainbowYellow = { fg = paper.yellow },
+    TSRainbowGreen = { fg = paper.green },
+    TSRainbowBlue = { fg = paper.blue },
+    TSRainbowViolet = { fg = paper.purple },
+    TSRainbowCyan = { fg = paper.aqua },
+    RainbowDelimiterRed = { fg = paper.red },
+    RainbowDelimiterOrange = { fg = paper.orange },
+    RainbowDelimiterYellow = { fg = paper.yellow },
+    RainbowDelimiterGreen = { fg = paper.green },
+    RainbowDelimiterBlue = { fg = paper.blue },
+    RainbowDelimiterViolet = { fg = paper.purple },
+    RainbowDelimiterCyan = { fg = paper.aqua },
+
+    NoiceCursor = { link = "TermCursor" },
+    NoiceCmdlinePopupBorder = { fg = paper.blue, bg = nil },
+    NoiceCmdlineIcon = { link = "NoiceCmdlinePopupBorder" },
+    NoiceConfirmBorder = { link = "NoiceCmdlinePopupBorder" },
+    NoiceCmdlinePopupBorderSearch = { fg = paper.yellow, bg = nil },
+    NoiceCmdlineIconSearch = { link = "NoiceCmdlinePopupBorderSearch" },
 
     TelescopeBorder = {fg=paper.teal};
     TelescopePromptBorder = {fg=paper.blue};
