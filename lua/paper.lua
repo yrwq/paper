@@ -260,6 +260,11 @@ function paper.load_plugin_syntax()
     LspDiagnosticsUnderlineInformation = {style="undercurl",sp=paper.blue},
     LspDiagnosticsUnderlineHint = {style="undercurl",sp=paper.cyan},
 
+    DiagnosticError = { fg=paper.red },
+    DiagnosticWarn = { fg=paper.yellow },
+    DiagnosticInfo = { fg=paper.blue },
+    DiagnosticHint = { fg=paper.green },
+
     CursorWord0 = {bg=paper.currsor_bg},
     CursorWord1 = {bg=paper.currsor_bg},
 
