@@ -62,14 +62,23 @@ function paper.terminal_color()
 end
 
 function paper.highlight(group, color)
-    local style = color.style and 'gui=' .. color.style or 'gui=NONE'
-    local fg = color.fg and 'guifg=' .. color.fg or 'guifg=NONE'
-    local bg = color.bg and 'guibg=' .. color.bg or 'guibg=NONE'
-    local sp = color.sp and 'guisp=' .. color.sp or ''
-    vim.api.nvim_command('highlight ' .. group .. ' ' .. style .. ' ' .. fg ..
-                             ' ' .. bg..' '..sp)
-end
+  if color.link then
+    vim.api.nvim_set_hl(0, group, { link = color.link })
+    return
+  end
 
+  vim.api.nvim_set_hl(0, group, {
+    fg = color.fg,
+    bg = color.bg,
+    sp = color.sp,
+    bold = color.style == "bold" or (type(color.style) == "string" and color.style:find("bold")),
+    italic = type(color.style) == "string" and color.style:find("italic") ~= nil,
+    underline = type(color.style) == "string" and color.style:find("underline") ~= nil,
+    undercurl = type(color.style) == "string" and color.style:find("undercurl") ~= nil,
+    reverse = type(color.style) == "string" and color.style:find("reverse") ~= nil,
+    strikethrough = type(color.style) == "string" and color.style:find("strikethrough") ~= nil,
+  })
+end
 
 function paper.load_syntax()
   local syntax = {
@@ -321,6 +330,31 @@ function paper.load_plugin_syntax()
     TelescopeSelection = {fg=paper.yellow,bg=paper.bg_highlight,style= 'bold'},
     TelescopeSelectionCaret = {fg=paper.yellow},
     TelescopeMultiSelection = {fg=paper.teal},
+
+    ["@comment"] = { link = "Comment" },
+    ["@none"] = { bg = "NONE", fg = "NONE" },
+    ["@preproc"] = { link = "PreProc" },
+    ["@define"] = { link = "Define" },
+    ["@operator"] = { link = "Operator" },
+    ["@punctuation.delimiter"] = { link = "Delimiter" },
+    ["@punctuation.bracket"] = { link = "Delimiter" },
+    ["@punctuation.special"] = { link = "Delimiter" },
+    ["@string"] = { link = "String" },
+    ["@string.regex"] = { link = "String" },
+    ["@string.regexp"] = { link = "String" },
+    ["@string.escape"] = { link = "SpecialChar" },
+    ["@string.special"] = { link = "SpecialChar" },
+    ["@string.special.path"] = { link = "Underlined" },
+    ["@string.special.symbol"] = { link = "Identifier" },
+    ["@string.special.url"] = { link = "Underlined" },
+    ["@character"] = { link = "Character" },
+    ["@character.special"] = { link = "SpecialChar" },
+    ["@boolean"] = { link = "Boolean" },
+    ["@number"] = { link = "Number" },
+    ["@number.float"] = { link = "Float" },
+    ["@float"] = { link = "Float" },
+    ["@function"] = { link = "Function" },
+    ["@function.builtin"] = { link = "Special" },
 
   }
   return plugin_syntax
