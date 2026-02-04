@@ -159,7 +159,7 @@ function paper.load_syntax()
     Macro = {fg=paper.cyan};
     Identifier = {fg=paper.orange};
 
-    Comment = {fg=paper.bg_highlight};
+    Comment = {fg=paper.grey};
     SpecialComment = {fg=paper.grey};
     Todo = {fg=paper.violet};
     Delimiter = {fg=paper.fg};
