@@ -283,12 +283,17 @@ function paper.load_plugin_syntax()
     RainbowDelimiterViolet = { fg = paper.purple },
     RainbowDelimiterCyan = { fg = paper.aqua },
 
-    NoiceCursor = { link = "TermCursor" },
-    NoiceCmdlinePopupBorder = { fg = paper.blue, bg = nil },
-    NoiceCmdlineIcon = { link = "NoiceCmdlinePopupBorder" },
-    NoiceConfirmBorder = { link = "NoiceCmdlinePopupBorder" },
-    NoiceCmdlinePopupBorderSearch = { fg = paper.yellow, bg = nil },
-    NoiceCmdlineIconSearch = { link = "NoiceCmdlinePopupBorderSearch" },
+    WinSeparator = { fg = paper.bg, bg = paper.bg };
+    VertSplit = { fg = paper.bg, bg = paper.bg };
+    NvimTreeWinSeparator = { fg = paper.bg, bg = paper.bg };
+    NvimTreeVertSplit = { fg = paper.bg, bg = paper.bg };
+
+    NoiceCursor = { link = "TermCursor" };
+    NoiceCmdlinePopupBorder = { fg = paper.blue, bg = nil };
+    NoiceCmdlineIcon = { link = "NoiceCmdlinePopupBorder" };
+    NoiceConfirmBorder = { link = "NoiceCmdlinePopupBorder" };
+    NoiceCmdlinePopupBorderSearch = { fg = paper.yellow, bg = nil };
+    NoiceCmdlineIconSearch = { link = "NoiceCmdlinePopupBorderSearch" };
 
     TelescopeBorder = {fg=paper.teal};
     TelescopePromptBorder = {fg=paper.blue};
@@ -296,6 +301,7 @@ function paper.load_plugin_syntax()
     TelescopeSelection = {fg=paper.yellow,bg=paper.bg_highlight,style= 'bold'};
     TelescopeSelectionCaret = {fg=paper.yellow};
     TelescopeMultiSelection = {fg=paper.teal};
+
   }
   return plugin_syntax
 end
