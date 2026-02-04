@@ -295,6 +295,22 @@ function paper.load_plugin_syntax()
     NoiceCmdlinePopupBorderSearch = { fg = paper.yellow, bg = nil };
     NoiceCmdlineIconSearch = { link = "NoiceCmdlinePopupBorderSearch" };
 
+    NoicePopup = { fg = paper.fg, bg = paper.bg};
+    NoicePopupBorder = { fg = paper.fg, bg = paper.bg};
+    NoiceSplit = { fg = paper.fg, bg = paper.bg};
+    NoiceSplitBorder = { fg = paper.fg, bg = paper.bg};
+    NoiceFloat = { fg = paper.fg, bg = paper.bg};
+    NoiceFloatBorder = { fg = paper.fg, bg = paper.bg};
+    NoicePopupMenu = { fg = paper.fg, bg = paper.bg_popup};
+    NoicePopupMenuBorder = { fg = paper.fg, bg = paper.bg};
+    NoicePopupMenuMatch = { fg = paper.green, bg = paper.bg};
+    NoicePopupMenuSelected = { fg = paper.fg, bg = paper.bg_highlight};
+
+    NoiceScrollbar = { bg = paper.fg };
+    NoiceScrollbarThumb = { bg = paper.bg_highlight };
+
+    NoiceVirtualText = { fg = paper.bg_popup };
+
     TelescopeBorder = {fg=paper.teal};
     TelescopePromptBorder = {fg=paper.blue};
     TelescopeMatching = {fg=paper.teal};
